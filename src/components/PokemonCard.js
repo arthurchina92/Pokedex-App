@@ -37,7 +37,6 @@ const styles = StyleSheet.create({
     },
     bgStyles: {
         Flex: 1,
-        borderWidth:2,
         borderRadius: 15,
         padding: 40,
     },
