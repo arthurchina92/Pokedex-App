@@ -16,6 +16,7 @@ export default function Pokedex() {
     const loadPokemons = async () =>{
         try {
             const response = await getPokemonsApi(nextUrl);
+            console.log(response.count);
             setNextUrl(response.next);
 
             const pokemonsArray = [];
@@ -39,7 +40,10 @@ export default function Pokedex() {
     }
     return (
       <SafeAreaView>
-        <PokemonList pokemon={pokemon} loadPokemons={loadPokemons}/>
+        <PokemonList 
+        pokemon={pokemon} 
+        loadPokemons={loadPokemons}
+        isNext={nextUrl}/>
       </SafeAreaView>
     );
   }
