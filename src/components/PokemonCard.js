@@ -62,6 +62,5 @@ const styles = StyleSheet.create({
         fontWeight:'bold',
         fontSize: 15,
         paddingTop: 10,
-        alignSelf:'flex-start',
     },
 })
